@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #fff !important;
+}
+
+html,
+.cards,
+.footer,
+.showDetails,
+.bookings {
+  background-color: #0f1014;
+}
+
+.input-box input {
+  border: none !important;
+  outline: none !important;
+  background-color: #222226 !important;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box button {
+  background-color: #222226 !important;
+  border-radius: 50px;
+}
+
+/* --------------------------Nav bar customization-------------------------- */
+
+.navbar-brand {
+  font-size: 26px !important;
+  font-weight: 600;
+}
+
+.toggler {
+  border: none !important;
+}
+
+.toggler:focus {
+  box-shadow: none !important;
+}
+
+@media (max-width: 1000px) {
+  .input-box {
+    display: none !important;
+  }
+  .button {
+    display: none;
+  }
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 88vh;
+  position: relative;
+}
+
+.carousel-item .details {
+  position: absolute;
+  bottom: 0;
+  max-width: 30%;
+  margin-bottom: 120px;
+  margin-left: 120px;
+}
+
+.carousel-item .details .title h1 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.carousel-item .tags span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttons button {
+  font-size: 20px;
+}
+
+.overview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 18px;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    height: 70vh;
+  }
+  .carousel-item .details {
+    margin-bottom: 90px;
+    margin-left: 90px;
+    max-width: 50%;
+  }
+  .carousel-item .details .title h1 {
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 700px) {
+  .carousel-item {
+    height: 50vh;
+  }
+  .carousel-item .details {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    max-width: 80%;
+  }
+  .carousel-item .details .title h1 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+}
+
+.cards div {
+  row-gap: 70px !important;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+
+/* footer css */
+
+.footer {
+  width: 100%;
+  padding: 100px 100px 0 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-1,
+.wrapper-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.wrapper-1 div h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #e1e6f0;
+}
+
+.wrapper-1 div ul {
+  margin: 24px 0;
+  padding: 10px 0 0 0;
+}
+
+.wrapper-2 ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-1 div ul li,
+.wrapper-2 ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #8f98b2;
+  text-align: start;
+  cursor: pointer;
+}
+
+.wrapper-1 .column-2 ul,
+.wrapper-1 .column-4 ul {
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper-1 .column-4 ul {
+  gap: 30px;
+}
+
+.wrapper-1 .column-4 ul li {
+  font-size: 24px;
+  color: #fff;
+}
+
+.wrapper-2 div {
+  margin: 24px 0;
+}
+
+/* ShowDetails CSS */
+
+.showInfo .name h1 {
+  font-size: 100px;
+}
+
+.properties .summary span {
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+.properties p {
+  font-weight: 600;
+}
+
+.properties p span {
+  font-weight: 500;
+}
+
+.book button {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* form .column input {
+  width: 300px;
+} */
